@@ -3,6 +3,8 @@
  * Creates an initial super_admin user.
  * Install tsx: npm install -D tsx
  */
+import { config } from "dotenv";
+config({ path: ".env.local" });
 import { Pool } from "pg";
 import bcrypt from "bcryptjs";
 
